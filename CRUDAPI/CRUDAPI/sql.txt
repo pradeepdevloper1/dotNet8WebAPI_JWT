@@ -1,0 +1,34 @@
+CREATE TABLE [dbo].[Products](
+	[Id] [int] IDENTITY(1,1) Primary key,
+	[Name] [nvarchar](100) NOT NULL,
+	[Description] [nvarchar](255) NULL,
+	[Price] [decimal](18, 2) NOT NULL)
+
+	INSERT INTO [dbo].[Products]
+           ([Name]
+           ,[Description]
+           ,[Price])
+     VALUES
+           ('Boat Headphone',	'HeadPhone',	499.00),
+		   ('JBL Speaker',	'Speaker',	122999.00),
+		   ('LG TV',	'Television',	20999.00),
+		   ('Whirlpool WashingMachine',	'WashingMachine',	30999.00),
+		   ('Samsung Refridgerator 	',	'Refridgerator',	40999.00),
+		   ('Iphone',	'MobilePhone',	119000.00)
+
+
+
+
+
+		   …or create a new repository on the command line
+echo "# dotNet8WebAPI_JWT" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pradeepdevloper1/dotNet8WebAPI_JWT.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/pradeepdevloper1/dotNet8WebAPI_JWT.git
+git branch -M main
+git push -u origin main
