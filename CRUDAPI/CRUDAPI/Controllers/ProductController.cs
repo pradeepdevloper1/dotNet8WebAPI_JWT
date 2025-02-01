@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using CRUDAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CRUDAPI.Controllers
 {
@@ -23,6 +24,7 @@ namespace CRUDAPI.Controllers
         }
 
         // GET: api/Products/5
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
